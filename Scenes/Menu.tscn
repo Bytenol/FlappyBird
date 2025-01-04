@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnx3klslatpny"]
+
+[ext_resource type="Script" path="res://Scripts/Menu.cs" id="1_bk2r5"]
+[ext_resource type="Texture2D" uid="uid://dbs4rgq70c31y" path="res://Assets/Mobile-Flappy-Bird-Version-12-Sprites.png" id="1_pd2yo"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+script = ExtResource("1_bk2r5")
+
+[node name="Background" type="Sprite2D" parent="."]
+scale = Vector2(2.52083, 2.55686)
+texture = ExtResource("1_pd2yo")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 144, 255)
+
+[node name="Floor" type="Sprite2D" parent="."]
+position = Vector2(218, 583)
+scale = Vector2(2.60189, 2.5012)
+texture = ExtResource("1_pd2yo")
+region_enabled = true
+region_rect = Rect2(291.35, 0, 168.482, 55.543)
+
+[node name="GetReady" type="Sprite2D" parent="."]
+position = Vector2(181, 242)
+scale = Vector2(1.89691, 1.69231)
+texture = ExtResource("1_pd2yo")
+region_enabled = true
+region_rect = Rect2(292.818, 58.2747, 97.2728, 26.3637)
+
+[node name="GameOver" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(184, 237)
+scale = Vector2(1.89691, 1.69231)
+texture = ExtResource("1_pd2yo")
+region_enabled = true
+region_rect = Rect2(391.225, 57.3285, 101.831, 25.4578)
+
+[node name="TapToPlay" type="Sprite2D" parent="."]
+position = Vector2(181, 366)
+scale = Vector2(3.18574, 3.19098)
+texture = ExtResource("1_pd2yo")
+region_enabled = true
+region_rect = Rect2(291.037, 82.4241, 59.3736, 58.8893)
+
+[node name="FlappyBird" type="Sprite2D" parent="."]
+position = Vector2(182, 139)
+scale = Vector2(2.60189, 2.5012)
+texture = ExtResource("1_pd2yo")
+region_enabled = true
+region_rect = Rect2(347.67, 84.0434, 94.0656, 32.8126)

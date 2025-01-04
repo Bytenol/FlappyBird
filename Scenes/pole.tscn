@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq14t1mujkd5x"]
+
+[ext_resource type="Texture2D" uid="uid://dbs4rgq70c31y" path="res://Assets/Mobile-Flappy-Bird-Version-12-Sprites.png" id="1_afn2r"]
+[ext_resource type="Script" path="res://Scripts/Pole.cs" id="1_llcbx"]
+
+[node name="Pole" type="Sprite2D"]
+texture_filter = 1
+texture = ExtResource("1_afn2r")
+centered = false
+region_enabled = true
+region_rect = Rect2(57.7536, 323.355, 22.579, 158.953)
+script = ExtResource("1_llcbx")
